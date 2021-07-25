@@ -39,3 +39,13 @@ p, button {
     display: inline;
   }
 }
+@media only screen and (max-width: 500px) {
+  img {
+    width: 75px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  img {
+    width: 25px;
+  }
+}
