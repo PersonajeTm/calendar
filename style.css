@@ -1,0 +1,33 @@
+body{
+  background-color: #BFAFFF;
+  margin: 0px;
+}
+div {
+  text-align: center;
+
+}
+#socials {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+}
+img {
+  width: 100px;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+}
+h1, h2 {
+  color: #1F0361;
+}
+a {
+  text-decoration: none;
+  color: #0047F1;
+}
+
+@media only screen and (max-width: 650px) {
+  #socials {
+    display: inline;
+  }
+}
