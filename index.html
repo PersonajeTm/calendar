@@ -8,16 +8,24 @@
   <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="style.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="icon" href="Photos/favicon.png" type="image/gif" sizes="16x16">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
   <script>
-    screen.lockOrientation(portrait);
+    $(document).ready(function() {
+      $("#warning").hide();
+      $(window).on("orientationchange", function() {
+        $("#warning").toggle();
+      });
+    });
   </script>
 </head>
 
 <body>
   <div id="centerer">
     <div id="paper">
-      <h1 id="title">Summer To-Do List!</h1>
-      <p style="margin-top: -20px;">Central Time Zone</p>
+      <h1 id="title" style="margin-left: 16%">Summer To-Do List!</h1>
+      <b><p style="margin-top: -20px;margin-left: 10%">Central Time Zone</p></b>
       <div id="list">
         <p class="item">☑️ Zine Announcement - <b>May 1st</b></p>
         <p class="item">☐ Sign-ups Close - <b>May 10th</b></p>
@@ -36,6 +44,11 @@
       </div>
     </div>
   </div>
+  <div id="warning" style="position: fixed;z-index: 10;width: 100%;
+  height: 100%; background-color: white;
+  display:flex;
+  justify-content: center; align-items:center;">please rotate your device<div>
+    </div>
 </body>
 
 </html>
