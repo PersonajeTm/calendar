@@ -13,7 +13,7 @@ a {
   max-width: 10%;
   max-height: 10%;
   position: fixed;
-  left: 5%;
+  right: 5%;
   bottom: 5%;
 }
 #carrdimg {
