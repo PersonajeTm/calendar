@@ -4,48 +4,11 @@ body{
 }
 div {
   text-align: center;
-
-}
-#socials {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  text-decoration: none;
-}
-img {
-  width: 100px;
-  position: fixed;
-  bottom: 5px;
-  left: 5px;
-}
-h1, h2 {
-  color: #1F0361;
 }
 a {
   text-decoration: none;
   color: #0047F1;
 }
-h1 {
-  font-family: 'Otomanopee One', sans-serif;
-}
-#title {
-  font-size: 40px;
-}
-p, button {
-  font-family: 'Mukta', sans-serif;
-}
-@media only screen and (max-width: 650px) {
-  #socials {
-    display: inline;
-  }
-}
-@media only screen and (max-width: 500px) {
-  img {
-    width: 75px;
-  }
-}
-@media only screen and (max-width: 320px) {
-  img {
-    width: 25px;
-  }
+#carrdLink {
+  max-width: 20%;
 }
